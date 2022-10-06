@@ -11,12 +11,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class GlobalAspect {
 
-    private static final Logger LOG = LoggerFactory.getLogger("BIZ_LOGGER");
+    private static final Logger LOG = LoggerFactory.getLogger("BOARD_LOGGER");
 
-    @Before("execution(* com.easyoops.biz.sample.service.SampleService.select*(..)) "
-            + "|| execution(* com.easyoops.biz.sample.service.SampleService.create*(..))"
-            + "|| execution(* com.easyoops.biz.sample.service.SampleService.update*(..))"
-    )
+//    @Before("execution(* com.easyoops.bulletinboard.service.user.select*(..)) "
+//            + "|| execution(* com.easyoops.bulletinboard.service.user.create*(..))"
+//            + "|| execution(* com.easyoops.bulletinboard.service.user.update*(..))"
+//    )
     public void sampleAspect(JoinPoint joinPoint) {
         // TODO: 2022-05-30  
 //        RequestChunk reqChunk = new RequestChunk();

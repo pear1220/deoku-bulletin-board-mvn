@@ -15,13 +15,22 @@ public class UserDTO {
     @ApiModelProperty(required = true, value = "ID")
     private String id;
 
-    @ApiModelProperty(required = true, value = "Password")
+    @ApiModelProperty(required = true, value = "비밀번호")
     private String password;
 
-    @ApiModelProperty(value = "email")
+    @ApiModelProperty(required = true, value = "이름")
+    private String name;
+
+    @ApiModelProperty(value = "E-mail")
     private String email;
 
     @ApiModelProperty(value = "전화번호")
-    private String phone;
+    private int phone;
+
+    @ApiModelProperty(value = "생일")
+    private String birth_date;
+
+    @ApiModelProperty(value = "사용여부")
+    private boolean del_yn;
 
 }
