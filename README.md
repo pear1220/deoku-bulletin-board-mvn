@@ -6,9 +6,24 @@
 3. File > Projects Structure > Project, Module > ver 1.8 / 8 변경.
 4. com/{project}/{project}Application 실행
 
-
+## ● class 주석 설정
+![image](https://user-images.githubusercontent.com/37864722/194234336-c788ae70-d642-4161-a89d-f3b575bca393.png)
+1. file > Settings > Editor > File and Code Templates > include
+> /**
+> 
+> packageName     : ${PACKAGE_NAME}
+> 
+> fileName        : ${NAME}
+> 
+> author          : ${USER}
+> 
+> date            : ${DATE}
+> 
+> version         : v0.1
+> 
+>  */
 ## ● structure
-![image](https://user-images.githubusercontent.com/13517312/170916737-aa3627dc-cc0b-4626-988a-b397589b7824.png)
+![image](https://user-images.githubusercontent.com/37864722/194232654-d2bbd354-7b73-4a46-be42-111680dfa4f9.png)
 
 - bulletin_board : 게시판 개발
 - common : 공통 (framework, util)
@@ -20,7 +35,7 @@
 
 ## ● swagger UI
 1. 설정 : SwaggerConfig.java
-2. URL : http://localhost:8080/swagger-ui/
+2. URL : http://localhost:8888/swagger-ui/
 
 ## ● application architecture
 1. 구조 정도만 잡아 두었으며, 업무 상황에 맞게 맞춤형 구성 필요
