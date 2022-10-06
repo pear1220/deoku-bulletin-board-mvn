@@ -19,13 +19,13 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@MapperScan(basePackages = "com.easyoops.**.mapper")
+@MapperScan(basePackages = "com.easyoops.**.mapper.**")
 @EnableTransactionManagement
 public class DataSourceConfig {
 
 	private static final Logger LOG = LoggerFactory.getLogger(DataSourceConfig.class);
 
-	@Bean(name = "h2Db")
+	@Bean(name = "mysqlDb")
 	@ConfigurationProperties(prefix="spring.datasource.hikari")
 	public HikariDataSource dataSource(){
 		return DataSourceBuilder

@@ -6,7 +6,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @WebAppConfiguration
 @SpringBootTest
-class EasyoopsApplicationTests {
+class BulletinBoardApplicationTests {
 
 	@Test
 	void contextLoads() {
